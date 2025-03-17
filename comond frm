@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Order Form - Lullis Bites</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+         <h2>Order Form - Lullis Bites</h2>
+         <form action="#" method="POST">
+             
+             <h3>Customer Information</h3>
+             <label>Full Name:</label>
+             <input type="text" name="name" required>
+ 
+             <label>Phone Number:</label>
+             <input type="tel" name="phone" required>
+ 
+             <label>Address:</label>
+             <input type="text" name="address" required>
+ 
+             <label>Delivery Method:</label>
+             <select name="delivery">
+                 <option value="home">Home Delivery</option>
+                 <option value="pickup">Pickup from Store</option>
+             </select>
+ 
+             <h3>Order Details</h3>
+             <label>Choose Your Products:</label>
+             <select name="product">
+                 <option value="cupcake">Cupcake</option>
+                 <option value="cookies">Cookies</option>
+                 <option value="cake">Cake</option>
+             </select>
+ 
+             <label>Special Requests:</label>
+             <textarea name="requests" placeholder="E.g., No nuts, extra chocolate"></textarea>
+ 
+             <label>Preferred Delivery Date & Time:</label>
+             <input type="datetime-local" name="delivery_time" required>
+ 
+             <h3>Payment Method</h3>
+             <label>Payment Option:</label>
+             <select name="payment">
+                 <option value="cod">Cash on Delivery</option>
+                 <option value="card">Credit Card</option>
+                 <option value="bank">Bank Transfer</option>
+             </select>
+ 
+             <label>Upload Payment Receipt (If Prepaid):</label>
+             <input type="file" name="receipt">
+ 
+             <h3>Review & Confirm</h3>
+             <label>Total Price: <span id="total-price">Calculated at Checkout</span></label>
+             
+             <button type="submit">Confirm Order</button>
+         </form>
+     </div>
+ </body>
+ </html>
+ <head>
